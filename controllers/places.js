@@ -18,7 +18,12 @@ router.get('/', (req, res)=> {
         cuisines: 'Coffee, Bakery',
         pic: '/images/chad-montano-MqT0asuoIcU-unsplash.jpg'
       }]
-      
     res.render('places/index', {places})
 })
+
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST/places')
+})
+
 module.exports = router
