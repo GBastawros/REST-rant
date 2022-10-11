@@ -1,17 +1,21 @@
 const mongoose = require('mongoose')
 
 const placeSchema = new mongoose.Schema({
-  name: { type: String, 
+  name: { 
+    type: String, 
     required: true 
 },
   pic: String,
-  cuisines: { type: String, 
+  cuisines: { 
+    type: String, 
     required: true 
 },
-  city: { type: String, 
+  city: { 
+    type: String, 
     default: 'Anytown' 
 },
-  state: { type: String, 
+  state: { 
+    type: String, 
     default: 'USA' 
 },
   founded: Number
