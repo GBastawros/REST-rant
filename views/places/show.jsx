@@ -72,7 +72,7 @@ function show(data) {
                     <h2>Comments</h2>
                     {comments}
                 </form>
-                <form method="POST" action={`/places/${data.id}`} id="comment">
+                <form method="POST" action={`/places/${data.place.id}`} id="comment">
                     <div>
                         <div>
                             <input

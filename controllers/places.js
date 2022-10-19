@@ -104,9 +104,6 @@ router.post('/:id/comment', (req, res) => {
           res.render('error404')
         })
     })
-    .catch(err => {
-      res.render('error404')
-    })
 
 router.post('/:id/rant', (req, res) => {
   res.send('GET /places/:id/rant stub')
