@@ -4,12 +4,15 @@ const Def = require('./default')
 function error404 () {
     return (
       <Def>
-          <main>
-              <h1>404: PAGE NOT FOUND</h1>
-              <p>Oops, sorry, we can't find this page!</p>
-              <img src="/images/wasa-crispbread-lcSfW7qkA-E-unsplash.jpg" alt="cripd bread" />
-              Photo by <a href="https://unsplash.com/@wasacrispbread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wasa Crispbread</a> on <a href="https://unsplash.com/explore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-          </main>
+            <div>
+                <img className='error' src="/images/404.png" alt="404 ERROR" />
+                <div>
+                Photo by Byron Redhead on <a href="https://firstpage.com.au/learning-centre/seo/404-pages-quick-tips-to-create-custom-error-pages/#">FirstPage</a>
+                </div>
+            </div>
+            <a href="/">
+                <button className="btn-primary">Home Page</button>
+            </a>
       </Def>
     )
   }
